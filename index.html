@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+    <link rel="stylesheet" href="style.css">
     
     <!-- font family link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +22,7 @@
             extend: {
               colors: {
                 color1: '#B4F461',
+                color2:'##F9F7F3'
               },
               FontFamily:{
                 font1:'"Lexend", sans-serif;'
@@ -31,26 +33,26 @@
       </script>
 </head>
 <body class="font-font1 w-10/12 mx-auto">
-    <header class="mt-6">
+    <header class="mt-6 ">
 
 
         <!-- navbar section start -->
-         <nav class="flex justify-between items-center">
+         <nav class="flex justify-between items-center flex-col md:flex-row mb-32">
             <div>
-                <button class="bg-color1 px-8 py-3 text-xl font-semibold rounded-lg">
+                <button class="bg-color1 md:px-8 md:py-3 px-36 text-xl font-semibold rounded-lg mb-5 md:mb-0 ">
                     Blog
                 </button>
              </div>
     
              <div class="flex items-center gap-4">
-               <div class="border-dashed border-2"> <img src="./assets/logo.png" alt=""></div>
-                <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+               <div class="border-dashed border-2 hidden md:block"> <img src="./assets/logo.png" alt=""></div>
+                <h1 class="text-2xl font-bold border-dashed border-2 md:border-none px-8 md:px-0 mb-5 md:mb-0">Donate Bangladesh</h1>
              </div>
              <div class="flex items-center gap-2">
-                <div class="border-dashed border-2">
+                <div class="border-dashed border-2 ">
                     <img  src="./assets/coin.png" alt="">
                 </div>
-                <h1 class="text-xl text-gray-400">
+                <h1 class="text-xl text-gray-400 border-dashed border-2 md:border-none px-8 md:px-0">
                     <span>5500</span>
                     <span>BDT</span>
                 </h1>
@@ -58,7 +60,16 @@
          </nav>
          <!-- nav section end -->
 
-         <!-- nav -->
+         <!-- nav button section start -->
+
+            <section class="flex gap-7 items-center justify-center">
+                <div>
+                    <button class="px-8 bg-color1 py-3 rounded-lg text-xl font-semibold siam-1">Donation</button>
+                </div>
+                <div>
+                    <button class="px-8 py-2 rounded-lg border-2 text-xl font-semibold text-gray-300 siam-1">History</button>
+                </div>
+            </section>
     </header>
 
     <main>

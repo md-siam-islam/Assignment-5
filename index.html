@@ -53,7 +53,7 @@
                     <img  src="./assets/coin.png" alt="">
                 </div>
                 <h1 class="text-xl text-gray-400 border-dashed border-2 md:border-none px-8 md:px-0">
-                    <span>5500</span>
+                    <span id="balance">5500</span>
                     <span>BDT</span>
                 </h1>
              </div>
@@ -62,12 +62,18 @@
 
          <!-- nav button section start -->
 
-            <section class="flex gap-7 items-center justify-center">
+            <section class="flex gap-7 items-center justify-center pb-5">
                 <div>
                     <button id="donation" class="px-8 bg-color1 py-3 rounded-lg text-xl font-semibold siam-1 border-2">Donation</button>
                 </div>
                 <div>
-                    <button id="history" class="px-8 py-2 rounded-lg border-2 text-xl font-semibold siam-1">History</button>
+                    <div>
+                      <button id="history" class="px-8 py-2 rounded-lg border-2 text-xl font-semibold ">History</button>
+                    </div>
+
+                    <div id="all-history" class="hidden">
+
+                    </div>
                 </div>
             </section>
     </header>
@@ -86,19 +92,19 @@
                       <div class="flex items-center bg-gray-200 w-28 pl-2 py-1 rounded-lg">
                           <img src="./assets/coin.png" alt="">
                           <h1>
-                              <span>0</span>
+                              <span id="donate-taka">0</span>
                               <span>BDT</span>
                           </h1>
                       </div>
 
-                    <h1 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <h1 id="plasename" class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                     <p class="py-6">
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
                     <div>
-                        <input class="w-4/5 mb-5 py-3 rounded-lg pl-2" type="text" placeholder="Write Donation Amount">
+                        <input id="input-amount" class="w-4/5 mb-5 py-3 rounded-lg pl-2" type="text" placeholder="Write Donation Amount">
                     </div>
-                    <button class="btn btn-primary w-4/5">Donate Now</button>
+                    <button id="donate-now" class="btn btn-primary w-4/5">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -171,6 +177,9 @@
 
   <!-- Aid for Injured in the Quota Movement section start-->
     </main>
+  
+
+
     <script src="script.js"></script>
     <script src="home.js"></script>
 </body>

@@ -57,9 +57,6 @@ document.getElementById('donate-now').addEventListener('click',function(event){
 
         getElementByIdText('balance').innerText = myBalance ;
 
-       alert("Your Donate is Successfully");
-
-
        let historyList = document.createElement('div');
        historyList.innerHTML = `
         
@@ -116,9 +113,6 @@ document.getElementById('donate-now-2').addEventListener('click',function(event)
         let myBalance = balance1 - donate3 ;
 
         getElementByIdText('balance').innerText = myBalance ;
-
-       alert("Your Donate is Successfully");
-
 
        let historyList = document.createElement('div');
        historyList.innerHTML = `
@@ -180,8 +174,6 @@ document.getElementById('donate-now-3').addEventListener('click',function(event)
         let myBalance = balance2 - donate3 ;
 
         getElementByIdText('balance').innerText = myBalance ;
-
-       alert("Your Donate is Successfully");
 
        let historyList = document.createElement('div');
        historyList.innerHTML = `

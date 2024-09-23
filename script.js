@@ -205,7 +205,7 @@ document.getElementById('donate-now-3').addEventListener('click',function(event)
 
 
 document.getElementById('blog').addEventListener("click" , function(){
-    window.location.href ="blog.html"
+    window.location.href ="./blog.html"
     
 })
 

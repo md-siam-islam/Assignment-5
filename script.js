@@ -60,15 +60,15 @@ document.getElementById('donate-now').addEventListener('click',function(event){
        alert("Your Donate is Successfully");
 
 
-       let historyList = document.createElement('li');
+       let historyList = document.createElement('div');
        historyList.innerHTML = `
         
-       <p> ${inputValue} Taka is Donate For ${plasename}</p>
-       <br>
-       <small><strong>Date:</strong> ${currentDateTime} GMT +0600 (Bangladesh standard Time )</small>
-
+       <p class = "border-2 text-xl rounded-lg px-8 py-4"> ${inputValue} Taka is Donate For ${plasename}
        <br> <br>
+       <small><strong>Date:</strong> ${currentDateTime} GMT +0600 (Bangladesh standard Time )</small>
+       </p>
        
+       <br> <br>
        `
 
        history.appendChild(historyList);
@@ -120,15 +120,15 @@ document.getElementById('donate-now-2').addEventListener('click',function(event)
        alert("Your Donate is Successfully");
 
 
-       let historyList = document.createElement('li');
+       let historyList = document.createElement('div');
        historyList.innerHTML = `
         
-       <p> ${inputValue2} Taka is Donate For ${plasename}</p>
-       <br>
-       <small><strong>Date:</strong> ${currentDateTime} GMT +0600 (Bangladesh standard Time )</small>
-
+       <p class = "border-2 text-xl rounded-lg px-8 py-4"> ${inputValue2} Taka is Donate For ${plasename}
        <br> <br>
+       <small><strong>Date:</strong> ${currentDateTime} GMT +0600 (Bangladesh standard Time )</small>
+       </p>
        
+       <br> <br>
        `
 
        history.appendChild(historyList);
@@ -183,16 +183,15 @@ document.getElementById('donate-now-3').addEventListener('click',function(event)
 
        alert("Your Donate is Successfully");
 
-
-       let historyList = document.createElement('li');
+       let historyList = document.createElement('div');
        historyList.innerHTML = `
         
-       <p> ${inputValue3} Taka is Donate For ${plasename}</p>
-       <br>
-       <small><strong>Date:</strong> ${currentDateTime} GMT +0600 (Bangladesh standard Time )</small>
-
+       <p class = "border-2 text-xl rounded-lg px-8 py-4"> ${inputValue3} Taka is Donate For ${plasename}
        <br> <br>
+       <small><strong>Date:</strong> ${currentDateTime} GMT +0600 (Bangladesh standard Time )</small>
+       </p>
        
+       <br> <br>
        `
 
        history.appendChild(historyList);
@@ -202,5 +201,13 @@ document.getElementById('donate-now-3').addEventListener('click',function(event)
         
     }
 })
+
+
+
+document.getElementById('blog').addEventListener("click" , function(){
+    window.location.href ="/blog.html"
+    
+})
+
 
 

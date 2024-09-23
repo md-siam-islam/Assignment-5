@@ -39,7 +39,7 @@
         <!-- navbar section start -->
          <nav class="flex justify-between items-center flex-col md:flex-row mb-32">
             <div>
-                <button class="bg-color1 md:px-8 md:py-3 px-36 py-4 text-xl font-semibold rounded-lg mb-5 md:mb-0 ">
+                <button onclick="navigate()" id="blog" class="bg-color1 md:px-8 md:py-3 px-36 py-4 text-xl font-semibold rounded-lg mb-5 md:mb-0 ">
                     Blog
                 </button>
              </div>
@@ -67,16 +67,22 @@
                     <button id="donation" class="px-8 bg-color1 py-3 rounded-lg text-xl font-semibold siam-1 border-2">Donation</button>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <div>
+                   
                       <button id="history" class="px-8 py-2 rounded-lg border-2 text-xl font-semibold ">History</button>
-                    </div>
-
-                    <ul id="all-history" class="hidden ">
-
-                   </ul>
+                    
                 </div>
             </section>
     </header>
+
+
+    <!-- history section -->
+
+    <div id="all-history" class="hidden"> 
+
+    </div>
+
+
+    <!-- history section -->
 
     <main id="main-container" class="mt-20 mb-24 ">
         <!-- Donate for Flood at Noakhali, Bangladesh section start -->

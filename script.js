@@ -140,4 +140,67 @@ document.getElementById('donate-now-2').addEventListener('click',function(event)
 })
 
 
+// 2nd part start end
+
+
+
+// 3nd part start start
+
+
+document.getElementById('donate-now-3').addEventListener('click',function(event){
+    event.preventDefault();
+
+    let inputValue3 = parseFloat(getInputFieldValueById('input-amount-3'));
+
+    let textElement3 = parseFloat(getElementByIdText('donate-taka-3').innerText);
+
+    let balance2 = parseFloat(getElementByIdText('balance').innerText);
+
+    let plasename = document.getElementById("plasename-3").innerText ;
+
+    let history = document.getElementById('all-history');
+    const currentDateTime = new Date().toLocaleString('en-US');
+
+    if(isNaN(inputValue3) || inputValue3 < 0){
+        return alert('Invalid input');
+    }
+
+    else if(inputValue3 > balance2){
+        return alert('Invalid input');
+    }
+
+   
+
+    else{
+   
+        let totalDonate1 = textElement3 + inputValue3 ;
+
+        let donate3 = getElementByIdText('donate-taka-3').innerText = totalDonate1 ;
+        
+        let myBalance = balance2 - donate3 ;
+
+        getElementByIdText('balance').innerText = myBalance ;
+
+       alert("Your Donate is Successfully");
+
+
+       let historyList = document.createElement('li');
+       historyList.innerHTML = `
+        
+       <p> ${inputValue3} Taka is Donate For ${plasename}</p>
+       <br>
+       <small><strong>Date:</strong> ${currentDateTime} GMT +0600 (Bangladesh standard Time )</small>
+
+       <br> <br>
+       
+       `
+
+       history.appendChild(historyList);
+
+
+    
+        
+    }
+})
+
 
